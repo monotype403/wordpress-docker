@@ -76,7 +76,7 @@ services:
     image: wordpress:latest
     restart: always
     ports:
-      - "80:8080"
+      - "80:80"
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wp_user
