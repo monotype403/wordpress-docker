@@ -37,10 +37,11 @@ sudo usermod -aG docker ec2-user
 
 ## Create new group for Docker, and check if Docker is running properly after the installation
 ```
-newgrp docker && exit
-
+# Execute the docker checks directly inside the new group environment
+newgrp docker <<EOD
 docker version
 docker run --rm hello-world
+EOD
 ```
 
 ## Install Docker Compose:
