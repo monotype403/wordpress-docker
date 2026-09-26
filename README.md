@@ -50,14 +50,22 @@ sudo usermod -aG docker ssm-user
 sudo usermod -aG docker ec2-user
 ```
 
-## Create new group for Docker, and check if Docker is running properly after the installation
+### Apply group permissions and verify the installation
+Run the following command to activate the Docker group permissions for your current session:
+
+```bash
+newgrp docker
 ```
-# Execute the docker checks directly inside the new group environment
-newgrp docker <<EOD
+
+Now, verify that Docker runs without sudo:
+
+```bash
 docker version
 docker run --rm hello-world
-EOD
 ```
+
+*Note: You can now proceed to run your `docker compose` commands directly in this terminal session.*
+
 
 ## Install Docker Compose:
 
