@@ -85,7 +85,7 @@ docker-compose --version
 ```
 services:
   db:
-    image: mysql:8.0
+    image: mysql:8.4
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: SecureRootPassword123*()*&&*
