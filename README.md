@@ -7,7 +7,21 @@ A simple and instant WordPress development environment using Docker and MySQL.
 sudo dnf update -y
 sudo dnf install -y docker curl
 sudo systemctl enable --now docker
+```
+
+### If SSM is used for auth:
+```
+
+sudo usermod -aG docker ssm-user
+```
+### If an SSH key is used for auth:
+```
+#If an SSH key is used for auth:
 sudo usermod -aG docker ec2-user
+```
+
+## Create new group for Docker, and check if Docker is running properly after the installation
+```
 newgrp docker
 
 docker version
