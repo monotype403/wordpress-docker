@@ -35,10 +35,10 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: SuperSecureRootPassword123
+      MYSQL_ROOT_PASSWORD: SecureRootPassword123*()*&&*
       MYSQL_DATABASE: wordpress_db
       MYSQL_USER: wp_user
-      MYSQL_PASSWORD: StrongWordPressUserPassword987
+      MYSQL_PASSWORD: Strong+WordPressUserPassword987
     volumes:
       - db_data:/var/lib/mysql
 
@@ -50,7 +50,7 @@ services:
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wp_user
-      WORDPRESS_DB_PASSWORD: StrongWordPressUserPassword987 # Must match MYSQL_PASSWORD above
+      WORDPRESS_DB_PASSWORD: Strong+WordPressUserPassword987 # Must match MYSQL_PASSWORD above
       WORDPRESS_DB_NAME: wordpress_db
     volumes:
       - wp_data:/var/www/html
