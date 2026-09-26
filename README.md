@@ -5,7 +5,23 @@ A simple and instant WordPress development environment using Docker and MySQL.
 
 ```
 sudo dnf update -y
-sudo dnf install -y docker curl
+```
+
+## Check if `curl` exists in the server
+
+```
+which curl
+```
+
+## If `curl` does not exist, install it. Otherwise, proceed to the next step:
+
+```
+sudo dnf install -y curl
+```
+
+## Install Docker and enable it
+```
+sudo dnf install -y docker
 sudo systemctl enable --now docker
 ```
 
