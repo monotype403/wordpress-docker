@@ -5,8 +5,13 @@ A simple and instant WordPress development environment using Docker and MySQL.
 
 ```
 sudo dnf update -y
+```
 
+## Check that you are in the home directory (i.e. `/home/ss-user` or `/home/ec2-user`):
+
+```
 cd ~
+pwd
 ```
 
 ## Check if `curl` exists in the server
