@@ -92,3 +92,7 @@ volumes:
   wp_data:
 
 ```
+
+## Bring the Docker container up to serve the website:
+
+> sudo docker compose up -d
