@@ -25,6 +25,8 @@ sudo dnf install -y docker
 sudo systemctl enable --now docker
 ```
 
+## 
+
 ### If SSM is used for auth:
 ```
 sudo usermod -aG docker ssm-user
@@ -96,7 +98,7 @@ volumes:
 ## Bring the Docker container up to serve the website:
 
 ```
-sudo docker compose up -d
+docker compose up -d
 ```
 
 ## Check if Wordpress is already accessible inside the private network
