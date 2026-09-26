@@ -57,7 +57,7 @@ sudo ln -s /usr/libexec/docker/cli-plugins/docker-compose /usr/local/bin/docker-
 docker-compose --version
 ```
 
-## Use the following template as a reference for the Docker Compose file, save as `docker-compose.yaml`
+## Use the following template as a reference for the Docker Compose file, save as `docker-compose.yaml`:
 
 ```
 services:
