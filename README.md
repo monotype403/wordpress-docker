@@ -95,4 +95,34 @@ volumes:
 
 ## Bring the Docker container up to serve the website:
 
-> sudo docker compose up -d
+```
+sudo docker compose up -d
+```
+
+## Check if Wordpress is already accessible inside the private network
+
+```
+curl -I http://localhost:80/
+```
+### If the output in the terminal is similar to this, then it is running:
+
+```
+HTTP/1.1 302 Found
+Date: Sat, 26 Sep 2026 08:14:02 GMT
+Server: Apache/2.4.68 (Debian)
+X-Powered-By: PHP/8.3.35
+Expires: Wed, 11 Jan 1984 05:00:00 GMT
+Cache-Control: no-cache, must-revalidate, max-age=0, no-store, private
+X-Redirect-By: WordPress
+Location: http://localhost/wp-admin/install.php
+Content-Type: text/html; charset=UTF-8
+```
+
+## Copy the IP address or public DNS of your EC2 instance, and access the following link in your browser:
+
+```
+http://[EC2_IP_OR_DNS]/wp-admin/install.php
+```
+<img width="1089" height="719" alt="Wordpress_Docker_Setup" src="https://github.com/user-attachments/assets/e3f98ccb-705f-4154-9f2f-ec5f4a136895" />
+
+Your WordPress website is now ready to be configured. Finish the configuration immediately, or terminate the EC2 instance if you will not be fully configuring this.
