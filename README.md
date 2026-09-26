@@ -14,6 +14,12 @@ cd ~
 pwd
 ```
 
+## Create a folder named `wordpress`, and go inside it:
+
+```
+mkdir wordpress && cd wordpress
+```
+
 ## Check if `curl` exists in the server
 
 ```
