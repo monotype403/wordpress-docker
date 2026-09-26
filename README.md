@@ -27,9 +27,9 @@ sudo systemctl enable --now docker
 
 ### If SSM is used for auth:
 ```
-
 sudo usermod -aG docker ssm-user
 ```
+
 ### If an SSH key is used for auth:
 ```
 sudo usermod -aG docker ec2-user
