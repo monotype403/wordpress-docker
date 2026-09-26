@@ -37,7 +37,7 @@ sudo usermod -aG docker ec2-user
 
 ## Create new group for Docker, and check if Docker is running properly after the installation
 ```
-newgrp docker
+newgrp docker && exit
 
 docker version
 docker run --rm hello-world
