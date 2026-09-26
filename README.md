@@ -1,7 +1,7 @@
 # wordpress-docker
 A simple and instant WordPress development environment using Docker and MySQL.
 
-## Spin up an EC2 instance using Amazon Linux 2023
+## After spinning up an EC2 instance using Amazon Linux 2023, update the server:
 
 ```
 sudo dnf update -y
