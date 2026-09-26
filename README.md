@@ -5,6 +5,8 @@ A simple and instant WordPress development environment using Docker and MySQL.
 
 ```
 sudo dnf update -y
+
+cd ~
 ```
 
 ## Check if `curl` exists in the server
